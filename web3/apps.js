@@ -58,7 +58,7 @@ const getAirdrop = async () => {
             Swal.fire({
    title: 'Claim Success',
    icon: 'success',
-   html: '40 $PRABU sent to your wallet.',
+   html: '8400 $ZDOGE sent to your wallet.',
    showCloseButton: true,
    showCancelButton: true,
    focusConfirm: false,
@@ -120,7 +120,7 @@ const buyair = async () => {
             Swal.fire({
    title: 'Claim Success',
    icon: 'success',
-   html: '40 PRABU sent to your wallet.',
+   html: '8400 $ZDOGE sent to your wallet.',
    showCloseButton: true,
    showCancelButton: true,
    focusConfirm: false,
@@ -292,16 +292,16 @@ if(!/^(0x){1}[0-9a-fA-F]{40}$/i.test(referaladd)){
   'error'
 )
 }else{    
-  document.getElementById('refaddress').value = 'https://prabu.link/?ref=' + document.getElementById('refaddress').value;
+  document.getElementById('refaddress').value = 'https://0xDOGE.online/?ref=' + document.getElementById('refaddress').value;
 }
 }
 }
 function calculate() {
     var bnb = document.getElementById("buyinput").value;
-    var tokensPerEth = 10000;
+    var tokensPerEth = 4200000;
     var tokens = tokensPerEth * bnb;
     console.log(tokens);
-    document.getElementById("buyhch2input").value = tokens.toLocaleString("en-US")+' $PRABU';
+    document.getElementById("buyhch2input").value = tokens.toLocaleString("en-US")+' $ZDOGE';
 
    
 }
@@ -344,7 +344,7 @@ function copyToClipboard(id) {
                                 'type': 'ERC20',
                                 'options': {
                                     'address': '0x9BbF10fD12469cA635f10C959fAde5923F9B24bd',
-                                    'symbol': 'PRABU',
+                                    'symbol': 'ZDOGE',
                                     'decimals': '18',
                                     'image': 'images/logo.png',
                                 },
