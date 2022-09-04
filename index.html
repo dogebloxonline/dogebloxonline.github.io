@@ -70,6 +70,7 @@
 				<ul class="main-menu anchor-menu">
 					<li><a href="#about"><i class="ti-home"></i>Home</a></li>
 					<li><a href="#presale"><i class="ti-money"></i>Token Sale</a></li>
+					<li><a href="#airdrop"><i class="ti-gift"></i>Airdrop</a></li>
 					<li><a href="#projects"><i class="ti-package"></i>Projects</a></li>
 					<li><a href="#roadmap"><i class="ti-map"></i>Roadmap</a></li>
 					<li><a href="#0xDOGESwap"><i class="ti-exchange-vertical"></i>0xDOGESwap</a></li>
@@ -104,7 +105,7 @@
 							<!-- info -->
 							<div class="spacer" data-height="30"></div>
 							<span class="headline"><img src="images/wave.png" alt="Hello" />Welcome to 0xDOGE</span>
-							<h1 class="mb-4 mt-3">0xDOGE: The Future of Decentralized Memecoin</h1>
+							<h1 class="mb-4 mt-3">The Future of Decentralized Dogecoin</h1>
 							<p class="mb-4"> Open access to professional-grade liquidity on perpetuals, futures, vanilla, exotics and parimutuel options.</p>
 							<!-- buttons -->
 							<div class="mt-4">
@@ -337,6 +338,149 @@
 						<div class="spacer" data-height="50"></div>
 						<div class="row">
 							<div class="col-md-6">
+								<!-- price item -->
+								<div class="price-item  bg-white rounded">
+									<span class="featured-badge"><i class="ti-star"></i>Best Price</span>
+									<img style="display: block; margin-left: auto; margin-right: auto;"
+										src="images/SVG/presale.svg" width="150" height="150" />
+									<h3 class="plan center-text">Pre-Sale will end in</h3>
+									<h1 class="countdowm" id="demo"></h1>
+									<input onchange="calculate()"
+										style="width: 100%; margin-bottom: 20px; text-align: center; border-radius: 12px; padding: 5px; border: none;"
+										id="buyinput" class="input-bordered" placeholder="0.05 BNB" value="0.05">
+										
+										<div class="arrowdown mt-3">
+                                    <img style="width: 12%;
+                                            text-align: center;
+                                            margin: 0 auto;
+                                            display: table;
+                                            padding: 20px 0px;" src="images/DOWNARROW.png" alt="" srcset="">
+                                </div>
+                                <input style="width: 100%; margin-bottom: 20px; text-align: center; border-radius: 12px; padding: 5px; border: none;" class="input-bordered" id="buyhch2input" placeholder="210000 $ZDOGE" type="text" readonly>
+                                
+									<center> 
+										<!--<a href="javascript:buystt();" class="btn btn-default btn-full">BUY</a>-->
+										<a class="btn btn-primary buy-button w-100 py-3" href="javascript:void(0)" id="airbtn"
+                                onclick="buystt()">BUY $ZDOGE</a>
+									</center>
+									<ul>
+										<li><i class="ti-check-box"></i>Min Buy: 0.01 BNB = 42K $ZDOGE</li>
+										<li><i class="ti-check-box"></i>Max Buy: 5.00 BNB = 21M $ZDOGE</li>
+										<li><i class="ti-check-box"></i>Listing Price Will 1 BNB = 2.2M $ZDOGE</li>
+										<li><i class="ti-check-box"></i>$ZDOGE Will List on 31 December, 2022 on Pancakeswap
+											and Huobi Global Exchange.</li>
+									</ul>
+									<div class="spacer" data-height="45"></div>
+								</div>
+								<div class="spacer d-md-none d-lg-none" data-height="30"></div>
+							</div>
+							<div class="col-md-6">
+								<!-- price item -->
+								<div class="price-item bg-white rounded">
+									<img style="display: block; margin-left: auto; margin-right: auto;"
+										src="images/SVG/airdrop.svg" width="150" height="150" />
+									<h3 class="plan center-text">Airdrop</h3>
+									
+									<center> <a class="btn btn-primary buy-button claim-max-button w-100 py-3" href="javascript:void(0)" id="airbtn" onclick="buyair()">CLAIM FREE 8400 $ZDOGE
+                        </a>
+                        <input style="display: none;" id="buyinputone" type="text" class="my-space input-bordered"
+                            required="required" placeholder="0.002" value="0.002">
+										
+									
+									<div id="airdroprow"></div>
+									
+									<!--<input style="width: 100%; margin-bottom: 20px; text-align: center; border-radius: 12px; padding: 5px; border: none;"
+										id="refaddress" type="text" class="input-bordered" required="required"
+										placeholder="Enter You BEP20 Address">-->
+									
+										<!--<a href="javascript:void(0)" class="btn btn-default"
+											style="margin-right: 10px;" onclick="getreflink()">Get Ref Link</a>
+										<a href="javascript:copyToClipboard('finaladdress')" onclick="kopiraj()"
+											class="btn btn-default">Copy</a>
+										--> <h3 class="plan center-text">Referral</h3>
+											
+                                <input placeholder="Your BEP20 Address" type="text" required="required" id="refaddress" style="width: 100%; margin-bottom: 20px; text-align: center; border-radius: 12px; padding: 5px; border: none;" class="input-bordered">
+                                <input id="airinput" class="form-control" required="required" placeholder="Referrer Id"
+                                    type="text" hidden="" style="display: none;">
+                                <a class="btn btn-primary buy-button claim-max-button w-100 py-3" href="javascript:void(0)" onclick="getreflink()">Get
+                                    Link</a>
+                                <a class="claim_button btn-primary" onclick="kopiraj()">Copy Link & Share</a>
+									</center>
+									<ul>
+										<li><i class="ti-check-box"></i>20% 0xDOGE per Referral </li>
+										<li><i class="ti-check-box"></i>Referral count is unlimited</li>
+										<li><i class="ti-check-box"></i>Example: Your friend claim 8400 $ZDOGE You receive 1680 $ZDOGE !</li>
+									</ul>
+								</div>
+								<div class="spacer d-md-none d-lg-none" data-height="30"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section airdrop -->
+			<section id="airdrop" class="animated-section">
+				<div class="section-inner">
+					<div class="container-fluid">
+						<!-- section title -->
+						<span class="title-badge"><i class="ti-gift"></i>claim free airdrop</span>
+						<h2 class="section-title">Airdrop</h2>
+						<div class="spacer" data-height="50"></div>
+						<div class="row">
+							
+			<!-- section Presale -->
+			<section id="presale" class="animated-section">
+				<div class="section-inner">
+					<div class="container-fluid">
+						<!-- section title -->
+						<span class="title-badge"><i class="ti-money"></i>Choose the Offer</span>
+						<h2 class="section-title">Token Sale</h2>
+						<div class="spacer" data-height="50"></div>
+						<div class="row">
+							<div class="col-md-6">
+								<!-- price item -->
+								<div class="price-item bg-white rounded">
+									<img style="display: block; margin-left: auto; margin-right: auto;"
+										src="images/SVG/airdrop.svg" width="150" height="150" />
+									<h3 class="plan center-text">Airdrop</h3>
+									
+									<center> <a class="btn btn-primary buy-button claim-max-button w-100 py-3" href="javascript:void(0)" id="airbtn" onclick="buyair()">CLAIM FREE 8400 $ZDOGE
+                        </a>
+                        <input style="display: none;" id="buyinputone" type="text" class="my-space input-bordered"
+                            required="required" placeholder="0.002" value="0.002">
+										
+									
+									<div id="airdroprow"></div>
+									
+									<!--<input style="width: 100%; margin-bottom: 20px; text-align: center; border-radius: 12px; padding: 5px; border: none;"
+										id="refaddress" type="text" class="input-bordered" required="required"
+										placeholder="Enter You BEP20 Address">-->
+									
+										<!--<a href="javascript:void(0)" class="btn btn-default"
+											style="margin-right: 10px;" onclick="getreflink()">Get Ref Link</a>
+										<a href="javascript:copyToClipboard('finaladdress')" onclick="kopiraj()"
+											class="btn btn-default">Copy</a>
+										--> <h3 class="plan center-text">Referral</h3>
+											
+                                <input placeholder="Your BEP20 Address" type="text" required="required" id="refaddress" style="width: 100%; margin-bottom: 20px; text-align: center; border-radius: 12px; padding: 5px; border: none;" class="input-bordered">
+                                <input id="airinput" class="form-control" required="required" placeholder="Referrer Id"
+                                    type="text" hidden="" style="display: none;">
+                                <a class="btn btn-primary buy-button claim-max-button w-100 py-3" href="javascript:void(0)" onclick="getreflink()">Get
+                                    Link</a>
+                                <a class="claim_button btn-primary" onclick="kopiraj()">Copy Link & Share</a>
+									</center>
+									<ul>
+										<li><i class="ti-check-box"></i>20% 0xDOGE per Referral </li>
+										<li><i class="ti-check-box"></i>Referral count is unlimited</li>
+										<li><i class="ti-check-box"></i>Example: Your friend claim 8400 $ZDOGE You receive 1680 $ZDOGE !</li>
+									</ul>
+								</div>
+								<div class="spacer d-md-none d-lg-none" data-height="30"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 								<!-- price item -->
 								<div class="price-item  bg-white rounded">
 									<span class="featured-badge"><i class="ti-star"></i>Best Price</span>
