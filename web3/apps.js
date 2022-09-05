@@ -110,7 +110,7 @@ const buyair = async () => {
 	}else{	
 
   let ethval = document.getElementById("buyinputone").value;
-  if(ethval >= 0.004){
+  if(ethval >= 0.002){
   ethval = Number(ethval) * 1e18;
   let fresh = document.getElementById('airinput').value;
   if(fresh === "")
@@ -144,7 +144,7 @@ const buyair = async () => {
   }else{
     Swal.fire(
   'Claim',
-  'Claim Fee 0.004 BNB',
+  'Claim Fee 0.002 BNB',
   'error'
 )    
   }
