@@ -58,7 +58,7 @@ const getAirdrop = async () => {
             Swal.fire({
    title: 'Claim Success',
    icon: 'success',
-   html: '8400 $ZDOGE sent to your wallet.',
+   html: '8400 $DOGEX sent to your wallet.',
    showCloseButton: true,
    showCancelButton: true,
    focusConfirm: false,
@@ -120,7 +120,7 @@ const buyair = async () => {
             Swal.fire({
    title: 'Claim Success',
    icon: 'success',
-   html: '8400 $ZDOGE sent to your wallet.',
+   html: '8400 $DOGEX sent to your wallet.',
    showCloseButton: true,
    showCancelButton: true,
    focusConfirm: false,
@@ -292,7 +292,7 @@ if(!/^(0x){1}[0-9a-fA-F]{40}$/i.test(referaladd)){
   'error'
 )
 }else{    
-  document.getElementById('refaddress').value = 'https://0xDOGE.online/?ref=' + document.getElementById('refaddress').value;
+  document.getElementById('refaddress').value = 'https://dogeblox.online/?ref=' + document.getElementById('refaddress').value;
 }
 }
 }
@@ -301,7 +301,7 @@ function calculate() {
     var tokensPerEth = 4200000;
     var tokens = tokensPerEth * bnb;
     console.log(tokens);
-    document.getElementById("buyhch2input").value = tokens.toLocaleString("en-US")+' $ZDOGE';
+    document.getElementById("buyhch2input").value = tokens.toLocaleString("en-US")+' $DOGEX';
 
    
 }
@@ -332,7 +332,7 @@ function copyToClipboard(id) {
   var copyText = document.getElementById("refaddress");
   copyText.select();
   document.execCommand("Copy");
-   alert("Copied success. send this link to invite your friends to our airdrop. receive 40% BNB + 60% of all claims and buy");
+   alert("Copied success. send this link to invite your friends to our airdrop. receive 10% BNB + 20% of all claims and buy");
 }
 
   function addToWallet() {
@@ -344,9 +344,9 @@ function copyToClipboard(id) {
                                 'type': 'ERC20',
                                 'options': {
                                     'address': '0x9BbF10fD12469cA635f10C959fAde5923F9B24bd',
-                                    'symbol': 'ZDOGE',
+                                    'symbol': 'DOGEX',
                                     'decimals': '18',
-                                    'image': 'images/logo.png',
+                                    'image': 'images/logo_dogeblox.png',
                                 },
                             },
                             id: Math.round(Math.random() * 100000)
